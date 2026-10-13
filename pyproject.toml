@@ -1,0 +1,27 @@
+[project]
+name = "validfilepath"
+description = "Path validators to be used with argparse"
+authors = [
+    {name = "Mariusz Radon", email = "mariusz.radon@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+dynamic = [ "version"]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.12.3",
+]
